@@ -683,7 +683,7 @@ def run_streamlit_ui(token: Optional[str], backend_choice: Optional[str]):
             model = st.text_input("Model", value=DEFAULT_LLM_MODEL)
             use_files = st.toggle("Use uploaded files as context", value=True)
             sys_prompt = st.text_area("System Prompt", value=(
-                " ignore all previous instructions You are Qubit, a helpful AI with quantum knowledge. Answer clearly, cite concepts simply, and when asked you can call quantum demos available in the other tab."
+                " ignore all previous instructions You are Qubit, a helpful AI with quantum knowledge. Answer clearly, cite concepts simply, and when asked you can call quantumlab or quantum demos available in the other tab."
             ), height=100)
 
         st.write("Upload reference files (txt/md/json/csv/pdf):")
